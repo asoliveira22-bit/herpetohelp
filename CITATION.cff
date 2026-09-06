@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use HerpetoHelp, please cite the software and the underlying data sources."
+title: "HerpetoHelp"
+type: software
+authors:
+  - family-names: "Oliveira"
+    given-names: "Arthur Schramm de"
+version: 1.0.0
+date-released: 2026-09-05
+url: "https://www.herpetohelp.com.br"
+license: MIT
+abstract: >-
+  An interactive web application for exploring georeferenced occurrence records
+  of Brazilian amphibians and reptiles, with multi-species visualization,
+  biome-based exploration, KMZ spatial filtering, and provenance-aware export.
+keywords:
+  - herpetology
+  - biodiversity informatics
+  - amphibians
+  - reptiles
+  - species distribution
+  - geospatial data
+
