@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { createPortal } from "react-dom";
 import type { FeatureCollection, Point, Polygon } from "geojson";
-import type { GeoJSONSource, Map as MapLibreMap } from "maplibre-gl";
+import type { GeoJSONSource, Map as MapLibreMap, MapMouseEvent } from "maplibre-gl";
 import { Hexagon } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -303,7 +303,7 @@ function MpcLayerControl({ maplibre }: { maplibre: MapLibreModule }) {
     const map = bridgedMap;
     if (!map) return;
 
-    const handleClick = (event: maplibre.MapMouseEvent) => {
+    const handleClick = (event: MapMouseEvent) => {
       if (!active) return;
       const feature = map.queryRenderedFeatures(event.point, {
         layers: [MPC_LINE_LAYER_ID, MPC_FILL_LAYER_ID].filter((layerId) =>
