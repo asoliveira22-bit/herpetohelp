@@ -1,5 +1,5 @@
-import { HerpetofaunaMap } from "@/components/herpetofauna-map";
+import { HerpetofaunaMapWithMpc } from "@/components/herpetofauna-map-mpc";
 
 export default function Home() {
-  return <HerpetofaunaMap />;
+  return <HerpetofaunaMapWithMpc />;
 }
